@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Rating } from "react-rating-stars";
+import { useState } from "react";
+import { Rating } from "../src/Rating";
 
 export default function App() {
   const [rating, setRating] = useState(2.5);
