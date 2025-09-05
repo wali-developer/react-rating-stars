@@ -1,6 +1,6 @@
 {
-  "name": "react-rating-stars",
-  "version": "1.0.0",
+  "name": "@wali-developer/react-rating-stars",
+  "version": "1.0.3",
   "description": "A customizable React star rating component with half-star support.",
   "main": "dist/index.js",
   "module": "dist/index.mjs",

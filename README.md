@@ -1,45 +1,81 @@
-# react-rating-stars
+# ⭐ React Rating Stars
 
-A customizable React star rating component with **half-star support**.
+A simple, customizable, and lightweight React rating component with **full, half, and empty star support**.  
+Built with [React Icons](https://react-icons.github.io/react-icons/) — works with **React** and **Next.js**.
 
-## Installation
+[![NPM](https://img.shields.io/npm/v/@wali-developer/react-rating-stars.svg)](https://www.npmjs.com/package/@wali-developer/react-rating-stars)
+[![License](https://img.shields.io/npm/l/@wali-developer/react-rating-stars.svg)](https://github.com/wali-developer/react-rating-stars/blob/main/LICENSE)
+
+---
+
+## 🚀 Demo
+
+Check out the live demo: [React Rating Stars Demo](https://react-rating-stars-demo.vercel.app)
+
+---
+
+## 📦 Installation
 
 ```bash
-npm install react-rating-stars
+npm install @wali-developer/react-rating-stars
+# or
+yarn add @wali-developer/react-rating-stars
+# or
+pnpm add @wali-developer/react-rating-stars
+
 ```
 
 ## Usage
 
-import { CustomRating } from "react-star-rating-custom";
+import React, { useState } from "react";
+import { Rating } from "@wali-developer/react-rating-stars";
 
-function App() {
-const [rating, setRating] = useState(0);
+export default function App() {
+const [rating, setRating] = useState(2.5);
 
 return (
-<CustomRating
-            value={rating}
-            onChange={setRating}
-            allowHalf
-            size={30}
-            color="#facc15"
+
+<div>
+<h2>Rate this product</h2>
+<Rating
+        maxStars={5}
+        value={rating}
+        onChange={setRating}
+        size={30}
       />
+</div>
 );
 }
 
 ## Props
 
-value (number): Current rating
+| Prop           | Type                      | Default     | Description                          |
+| -------------- | ------------------------- | ----------- | ------------------------------------ |
+| `value`        | `number`                  | `0`         | Controlled rating value              |
+| `defaultValue` | `number`                  | `0`         | Initial value for uncontrolled usage |
+| `onChange`     | `(value: number) => void` | `-`         | Callback fired when rating changes   |
+| `max`          | `number`                  | `5`         | Maximum number of stars              |
+| `size`         | `number`                  | `24`        | Size of each star in pixels          |
+| `readOnly`     | `boolean`                 | `false`     | Disables interaction if true         |
+| `className`    | `string`                  | `""`        | Custom class name for wrapper        |
+| `showLabel`    | `boolean`                 | `false`     | Shows numeric label next to stars    |
+| `filledColor`  | `string`                  | `"#F59E0B"` | Color of filled stars                |
+| `emptyColor`   | `string`                  | `"#CBD5E1"` | Color of empty stars                 |
+| `halfColor`    | `string`                  | `"#F59E0B"` | Color of half-filled stars           |
+| `allowHalf`    | `boolean`                 | `false`     | Enables half-star selection          |
 
-onChange (fn): Callback when rating changes
+## Features
 
-max (number): Default 5
+⭐ Full, half, and empty star ratings
 
-allowHalf (boolean): Allow half stars
+⚡ Lightweight, no external heavy deps
 
-size (number): Star size
+🎯 Works with React & Next.js
 
-color (string): Filled star color
+🎨 Customizable size and colors
 
-emptyColor (string): Empty star color
+♿ Keyboard accessible (Arrow keys)
 
-readOnly (boolean): Disable interaction
+## License
+
+MIT © [Wali Ullah](https://github.com/wali-developer)
