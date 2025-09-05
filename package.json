@@ -1,0 +1,38 @@
+{
+  "name": "react-rating-stars",
+  "version": "1.0.0",
+  "description": "A customizable React star rating component with half-star support.",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --dts --format cjs,esm",
+    "prepublishOnly": "npm run build"
+  },
+  "peerDependencies": {
+    "react": ">=17",
+    "react-dom": ">=17"
+  },
+  "dependencies": {
+    "react-icons": "^5.2.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "tsup": "^7.0.0"
+  },
+  "keywords": [
+    "react",
+    "nextjs",
+    "rating",
+    "review",
+    "stars",
+    "component",
+    "ui",
+    "half-star"
+  ],
+  "author": "Wali Ullah",
+  "license": "MIT"
+}
