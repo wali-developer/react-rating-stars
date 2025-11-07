@@ -10,7 +10,7 @@ Built with [React Icons](https://react-icons.github.io/react-icons/) — works w
 
 ## 🚀 Demo
 
-Check out the live demo: [React Rating Stars Demo](https://react-rating-stars-demo.vercel.app)
+Check out the live demo: [React Rating Stars Demo](https://codesandbox.io/p/sandbox/friendly-leftpad-hk2gdm)
 
 ---
 
